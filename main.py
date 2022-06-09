@@ -36,7 +36,6 @@ load = 43.7
 # Comprimento da viga [m], módulo de elasticidade [kN/cm²], inércia [cm4]
 b = Beam(5, E, I)
 
-
 #Função aplica carga na viga
 #Primeiro argumento é a carga
 #Segundo argumento é o ponto de início(x=0)
