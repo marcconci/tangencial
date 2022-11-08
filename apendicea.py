@@ -1,10 +1,18 @@
 from sympy import *
 from sympy.physics.continuum_mechanics.beam import Beam
 import matplotlib.pyplot as plt
-
+from shapely.geometry import Polygon
 from matplotlib import style
+
 style.use('ggplot')
 init_printing()
+
+
+#Determina o poligno
+P = Polygon([[0, 0], [1, 0], [1, 1], [0, 1]])
+C= P.centroid
+
+print(C)
 
 # Determina as reações R1, R2
 R1, R2 = symbols('R1 R2')
